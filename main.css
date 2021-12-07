@@ -11,6 +11,8 @@
 html{
     scroll-behavior: smooth;
 }
+/* MOON*/
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -29,7 +31,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 footer {
     padding: 10rem;
@@ -40,6 +42,7 @@ footer {
     margin: auto;
 }
 .about, .services, .skills, .interests, .contact, footer{
+    background-color: #ffd4d4;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -63,7 +66,7 @@ section .title{
 }
 .max-width > h2 i {
     font-size: 3.5rem;
-    color: #1fb39e;
+    color: #ff602e;
 }
 section .title::before{
     content: "";
@@ -80,10 +83,11 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #1fb39e;
+    color: #000000;
     padding: 0 5px;
-    background: #fff;
+    background: linear-gradient(60deg,#f37055, #f79533, #ef4e7b,#5073b8, #a166ab, #07b39b, #6fba82);
     transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 /* navbar styling */
@@ -96,8 +100,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: #1fb39e;
+    padding: 8px 0;
+    background: rgb(47 36 64);
 }
 .navbar .max-width{
     display: flex;
@@ -105,12 +109,12 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #00ff97;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: #1fb39e;
+    color: #ff0080;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -125,14 +129,14 @@ li {
 .navbar .menu li a{
     position: relative;
     display: block;
-    color: #fff;
+    color: linear-gradient(60deg,#f37055, #f79533, #ef4e7b,#5073b8, #a166ab, #07b39b, #6fba82);;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #1fb39e;
+    color: #eb8484;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -143,7 +147,7 @@ li {
     display: block;
     margin-top: 1px;
     height: 2px;
-    background-color: #1fb39e;
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
     transition: width .25s;
 }
 .navbar.sticky .menu li a::after {
@@ -225,7 +229,7 @@ ul.social-media {
     display: flex;
     background: url("images/bg1.jpg");
     height: 100vh;
-    color: #fff;
+    color: #9bdeff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -273,20 +277,21 @@ ul.social-media {
     z-index: 2;
 }
 .home .home-content .text-3 span{
-    color: #1fb39e;
+    color: #ef4e7b;
     font-weight: 500;
     z-index: 2;
 }
+
 .home .home-content a{
     display: inline-block;
-    background: #1fb39e;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
     color: #fff;
     font-size: 25px;
     padding: 12px 32px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #1fb39e;
+    border: 2px solid  linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) ;
     transition: all 0.3s ease;
     z-index: 2;
 }
@@ -305,17 +310,17 @@ ul.social-media {
     margin-left: .5rem;
 }
 .home .home-content a.more-details{
-    background:rgba(33,33,33,.8);
-    color: #1fb39e;
-    border: 2px solid #1fb39e;
+    background:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border: 2px solid linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 }
 .home .home-content a.more-details:hover{ 
-    background: #1fb39e;
-    color: white;
+    color: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background: linear-gradient(60deg,#5073b8, #ef4e7b, #6fba82, #a166ab, #07b39b );
+    cursor: pointer;
 }
 .home .home-content a:hover {
-    color: #1fb39e;
-    background: none;
+    color: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background: linear-gradient(60deg,#5073b8, #ef4e7b, #6fba82, #a166ab, #07b39b );
     cursor: pointer;
 }
 /* about section styling */
@@ -388,15 +393,15 @@ ul.social-media {
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #1fb39e;
-    color: #fff;
+    background: rgb(0, 0, 0);
+    color: rgb(255 187 187);
     font-size: 20px;
     font-weight: 500;
     padding: 10px 20px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #1fb39e;
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all 0.3s ease 0s;
 }
 .about .about-content .right a:hover{
     color: #1fb39e;
@@ -406,15 +411,15 @@ ul.social-media {
 /* services section styling */
 .services, .interests{
     color:#fff;
-    background: #111;
+    background:#ffd4d4;
 }
 .services .title::before,
 .interests .title::before{
-    background: #fff;
+    background: #000;
 }
 .services .title::after,
 .interests .title::after{
-    background: #111;
+    background: linear-gradient(60deg,#f37055, #f79533, #ef4e7b,#5073b8, #a166ab, #07b39b, #6fba82);;
     content: "my services";
 }
 .services .serv-content .card{
@@ -458,7 +463,7 @@ ul.social-media {
     left: 0;
     border-width: 1rem;
     border-style: solid;
-    border-color : rgb(70, 69, 69) rgb(70, 69, 69) #111 #111;
+    border-color :  rgb(8 8 8) rgb(0 0 0) #000000 #000000;
     /* Firefox 3.0 damage limitation */
     display: block; width: 0;
     transition: all 0.3s ease;
@@ -471,7 +476,7 @@ ul.social-media {
     border-width: 1rem;
     border-bottom-left-radius : 6px;
     border-style: solid;
-    border-color : #111 #111 rgb(70, 69, 69) rgb(70, 69, 69);
+    border-color : #1f9f99 #21a79a rgb(8 8 8) rgb(0 0 0) ;
     /* Firefox 3.0 damage limitation */
     display: block; width: 0;
     transition: all 0.3s ease;
@@ -552,7 +557,7 @@ ul.social-media {
 }
 .interests .carousel .card{
     margin-top: 100px;
-    background: #222;
+        background-color: black;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -585,7 +590,7 @@ ul.social-media {
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #1fb39e;
+    border: 1px solid #ccc;
     transition: all 0.3s ease;
 }
 .interests .carousel .card:hover img{
@@ -614,6 +619,15 @@ ul.social-media {
 }
 
 /* contact section styling */
+.info1 {
+    margin-left: 30px;
+}
+.info2 {
+    margin-left: 33px;
+}
+.info3 {
+    margin-left: 27px;
+}
 .contact .title::after{
     content: "Contact";
 }
@@ -737,7 +751,7 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 26px 0;
 }
 footer span a{
     color: #1fb39e;
@@ -749,7 +763,13 @@ footer span a:hover{
 
 
 /* responsive media query start */
-@media (max-width: 1104px) {
+@media (min-width: 1024px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 450px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
@@ -776,7 +796,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #bfbfbf;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -846,7 +866,7 @@ footer span a:hover{
 
 @media (max-width: 690px) {
     .social-media { 
-        right: 24.5px;
+        right: 13.5px;
     }
     .max-width{
         padding: 0 23px;
@@ -866,7 +886,7 @@ footer span a:hover{
 }
 @media (max-width: 480px) { 
     .home .home-content .text-2{
-        font-size: 2.5rem !important;
+        font-size: 2.39rem !important;
     }
     .home .home-content a{
         padding: 12px 1rem;
@@ -948,3 +968,4 @@ ul.nav-footer {
     top:15px;
     padding-left: 15px;
 }
+
